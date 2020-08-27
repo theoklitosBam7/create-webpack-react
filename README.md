@@ -23,8 +23,8 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-- `git clone https://github.com/theoklitosBam7/create-webpack-react.git` this repository
-- `cd my-app`
+- `git clone https://github.com/theoklitosBam7/create-webpack-react.git`
+- `cd create-webpack-react`
 - `npm install`
 
 ## Running / Development
@@ -32,7 +32,7 @@ You will need the following things properly installed on your computer.
 ### Development server
 
 - `npm start`
-- Your default browser will automatically open at [http://localhost:8080](http://localhost:8080). You may change the port in `dev-server` options in `webpack.config.js` file.
+- Your default browser will automatically open at [http://localhost:8080](http://localhost:8080). You may change the port in `devServer` options in `webpack.config.js` file.
 - The app will automatically reload if you change any of the source files.
 
 ### Building
