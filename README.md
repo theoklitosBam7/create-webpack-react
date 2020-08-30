@@ -23,8 +23,8 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-- `git clone https://github.com/theoklitosBam7/create-webpack-react.git`
-- `cd create-webpack-react`
+- `git clone --depth=1 https://github.com/theoklitosBam7/create-webpack-react.git <your_project_name>`
+- `cd <your_project_name>`
 - `npm install`
 
 ## Running / Development
@@ -42,7 +42,7 @@ The build artifacts will be stored in the `dist/` directory. It correctly bundle
 
 ### Deploying
 
-There are plenty of services to deploy your app such as [Netlify](https://www.netlify.com/), [Heroku](https://www.heroku.com/), [Vercel](https://vercel.com/).
+There are plenty of services to deploy your app such as [Netlify](https://www.netlify.com/), [GitHub Pages](https://pages.github.com/), [Vercel](https://vercel.com/), [Heroku](https://www.heroku.com/).
 
 ## Further Reading / Useful Links
 
