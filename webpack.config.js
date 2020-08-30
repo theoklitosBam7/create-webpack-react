@@ -24,7 +24,6 @@ module.exports = (env, options) => {
     entry: path.resolve(paths.srcPath, 'index.js'),
     plugins: [
       new CleanWebpackPlugin(),
-      new webpack.NamedModulesPlugin(),
       new HtmlWebpackPlugin({
         template: path.resolve(paths.srcPath, 'index.html'),
         favicon: path.resolve(paths.imgPath, 'favicon.ico'),
@@ -59,6 +58,7 @@ module.exports = (env, options) => {
             loader: 'file-loader',
             options: {
               outputPath: 'images',
+              name: isDev ? '[path][name].[ext]' : '[contenthash].[ext]',
             },
           },
         },
@@ -69,6 +69,9 @@ module.exports = (env, options) => {
           },
         },
       ],
+    },
+    resolve: {
+      extensions: ['.jsx', '.js', '.css'],
     },
   };
 };
